@@ -4,17 +4,23 @@
 
     div.menu-wrap {
         display: flex;
-        height: 50%;
+        height: 100%;
         width: 100%;
-        padding: 10px 5px;
+        padding: 10px 50px;
         margin: 0;
 
         .menu {
             display: flex;
             align-items: center;
             justify-content: center;
-            border: 5px solid #FFFFFF;
+            border: 5px solid #ffffff;
 
+            &:hover {
+                cursor: pointer;
+            }
+            &:active {
+                opacity: 0.5;
+            }
             div {
                 height: 100%;
             }

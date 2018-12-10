@@ -4,7 +4,6 @@
 // common
 html, body {
     height: 100%;
-    // background-color: aquamarine;
     margin: 0;
 
     app-root {
@@ -23,6 +22,18 @@ html, body {
             height: 10%;
             footer {
                 height: 100%;
+            }
+        }
+    }
+
+
+    @media (max-width: 767px) {
+        app-root {
+            div.wrapper-contents {
+                height: 1600px;
+                .menu-wrap {
+                    padding: 5px 5px !important;
+                }
             }
         }
     }
