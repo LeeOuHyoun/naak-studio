@@ -1,3 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
-// test comment
 @import '../node_modules/bootstrap/dist/css/bootstrap-grid.min';
+
+// common
+html, body {
+    height: 100%;
+    // background-color: aquamarine;
+    margin: 0;
+
+    app-root {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+
+        app-header {
+            height: 10%;
+        }
+        div.wrapper-contents {
+            height: 80%;
+        }
+        app-footer {
+            height: 10%;
+            footer {
+                height: 100%;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,63 @@
+.main-contents-wrap {
+    height: 100%;
+    width: 100%;
+
+    div.menu-wrap {
+        display: flex;
+        height: 50%;
+        width: 100%;
+        padding: 10px 5px;
+        margin: 0;
+
+        .menu {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 5px solid #FFFFFF;
+
+            div {
+                height: 100%;
+            }
+            &.yarn-wrap {
+                background-color:  aquamarine;
+                .yarn {
+                    height: 90%;
+                    width: 50%;
+                    background: url('../../images/yarn.png');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-color: #FFFFFF;
+                    border-radius: 50%;
+                }
+            }
+
+            &.diy-kit-wrap {
+                background-color: #CCB2A3;
+                .diy-kit {
+                    height: 90%;
+                    width: 50%;
+                    background: url('../../images/diy-kit.png');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-color: #EEEEEE;
+                    border-radius: 50%;
+                }
+            }
+
+            &.samples-wrap {
+                background-color: #1037B5;
+                .samples {
+                    height: 90%;
+                    width: 50%;
+                    background: url('../../images/samples.png');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-color: #EFC84A;
+                    border-radius: 50%;
+                }
+
+            }
+
+        }
+    }
+}
