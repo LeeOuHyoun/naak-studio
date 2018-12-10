@@ -22,7 +22,6 @@
                 background-color:  aquamarine;
                 .yarn {
                     height: 90%;
-                    width: 50%;
                     background: url('../../images/yarn.png');
                     background-repeat: no-repeat;
                     background-position: center;
@@ -35,7 +34,6 @@
                 background-color: #CCB2A3;
                 .diy-kit {
                     height: 90%;
-                    width: 50%;
                     background: url('../../images/diy-kit.png');
                     background-repeat: no-repeat;
                     background-position: center;
@@ -48,14 +46,36 @@
                 background-color: #1037B5;
                 .samples {
                     height: 90%;
-                    width: 50%;
                     background: url('../../images/samples.png');
                     background-repeat: no-repeat;
                     background-position: center;
                     background-color: #EFC84A;
                     border-radius: 50%;
                 }
+            }
 
+            &.cast-on-needle-wrap {
+                background-color: #1FA4B6;
+                .cast-on-needle {
+                    height: 90%;
+                    background: url('../../images/cast-on-needle.png');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-color: #FFFFFF;
+                    border-radius: 50%;
+                }
+            }
+
+            &.crochet-wrap {
+                background-color: #130F0F;
+                .crochet {
+                    height: 90%;
+                    background: url('../../images/crochet.png');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-color: #ECF0F0;
+                    border-radius: 50%;
+                }
             }
 
         }
