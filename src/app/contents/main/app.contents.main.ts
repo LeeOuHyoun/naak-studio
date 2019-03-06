@@ -1,33 +1,38 @@
-import { Component } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { Component, Injectable } from '@angular/core';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
+const headers = new HttpHeaders().set('Content-Type', 'application/json');
 @Component({
-    templateUrl: './app.contents.main.html',
-    styleUrls: ['./app.contents.main.scss']
+  templateUrl: './app.contents.main.html',
+  styleUrls: ['./app.contents.main.scss']
 })
 
+@Injectable()
 export class AppContentsMainComponent {
-    constructor(private http: HttpClient) {
-        console.log('Hello AppContentsMainComponent ~ !!');
-        this.getPosts();
-    }
-    getPosts() {
-        this.http.get('../assets/json/db.json').subscribe((data) => {
-            console.log(JSON.stringify(data));
-        }, err => {
-            console.log('error___');
-        });
-    }
 
-    getPosts2() {
-        // https://jsonplaceholder.typicode.com/posts
-        this.http.get('../assets/json/dummyDB.json')
-        .toPromise()
-        .then((data) => {
-            console.log('hello~~');
-            console.log(JSON.stringify(data));
-        }).catch((error) => {
-            console.log('error ===>');
-        });
-    }
+  constructor(private http: HttpClient) { }
+
+  getPosts2() {
+    this.http
+      .get('../assets/json/dummyDB.json')
+      .toPromise()
+      .then(data => {
+        console.log('hello~~');
+        console.log(JSON.stringify(data));
+      })
+      .catch(error => {
+        console.log('error ===>');
+      });
+  }
+
+  clickBtnOne(arg) {
+    this.http.post( 'api/feed', { data: 'testData!!' }, { headers } ).subscribe(
+        data => {
+        console.log('get Data ===> %O', data);
+      },
+      err => {
+        console.log('error___');
+      }
+      )
+  }
 }
