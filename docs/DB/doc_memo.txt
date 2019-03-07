@@ -1,0 +1,40 @@
+--------------------------------------------------------------
+●t_products （ 商品情報 ）
+〇
+・ product_no （ 商品番号 ）
+・ product_title （ 商品名 ）
+・ image_src （ 画像ソース ）
+・ inventory （ 在庫 ）
+・ category （ 商品区分 ）
+・ price （ 値段 ）
+・ comment（ コメント ）
+・ created_at（ 登録日時 ）
+・ created_user （ 登録者 ）
+・ updated_at（ 更新日時 ）
+・ updated_user （ 更新者 ）
+・ is_deleted ( 0：有効、1：削除)（ 削除状態 ）
+--------------------------------------------------------------
+INSERT INTO "public".t_products(product_no,product_title,image_src,inventory,category,price,"comment",created_at,created_user,updated_at,updated_user,is_deleted) VALUES ('1','商品名_1','',10,1,20000,'商品_コメント_1',NULL,NULL,NULL,NULL,0);
+INSERT INTO "public".t_products(product_no,product_title,image_src,inventory,category,price,"comment",created_at,created_user,updated_at,updated_user,is_deleted) VALUES ('2','商品名_2','',10,1,21000,'商品_コメント_2',NULL,NULL,NULL,NULL,0);
+INSERT INTO "public".t_products(product_no,product_title,image_src,inventory,category,price,"comment",created_at,created_user,updated_at,updated_user,is_deleted) VALUES ('3','商品名_3','',10,1,22000,'商品_コメント_3',NULL,NULL,NULL,NULL,0);
+INSERT INTO "public".t_products(product_no,product_title,image_src,inventory,category,price,"comment",created_at,created_user,updated_at,updated_user,is_deleted) VALUES ('4','商品名_4','',10,1,23000,'商品_コメント_4',NULL,NULL,NULL,NULL,0);
+INSERT INTO "public".t_products(product_no,product_title,image_src,inventory,category,price,"comment",created_at,created_user,updated_at,updated_user,is_deleted) VALUES ('5','商品名_5','',10,1,24000,'商品_コメント_5',NULL,NULL,NULL,NULL,0);
+INSERT INTO "public".t_products(product_no,product_title,image_src,inventory,category,price,"comment",created_at,created_user,updated_at,updated_user,is_deleted) VALUES ('6','商品名_6','',10,1,25000,'商品_コメント_6',NULL,NULL,NULL,NULL,0);
+INSERT INTO "public".t_products(product_no,product_title,image_src,inventory,category,price,"comment",created_at,created_user,updated_at,updated_user,is_deleted) VALUES ('7','商品名_7','',10,1,26000,'商品_コメント_7',NULL,NULL,NULL,NULL,0);
+INSERT INTO "public".t_products(product_no,product_title,image_src,inventory,category,price,"comment",created_at,created_user,updated_at,updated_user,is_deleted) VALUES ('8','商品名_8','',10,1,27000,'商品_コメント_8',NULL,NULL,NULL,NULL,0);
+INSERT INTO "public".t_products(product_no,product_title,image_src,inventory,category,price,"comment",created_at,created_user,updated_at,updated_user,is_deleted) VALUES ('9','商品名_9','',10,1,28000,'商品_コメント_9',NULL,NULL,NULL,NULL,0);
+INSERT INTO "public".t_products(product_no,product_title,image_src,inventory,category,price,"comment",created_at,created_user,updated_at,updated_user,is_deleted) VALUES ('10','商品名_10','',10,1,29000,'商品_コメント_10',NULL,NULL,NULL,NULL,0);
+INSERT INTO "public".t_products(product_no,product_title,image_src,inventory,category,price,"comment",created_at,created_user,updated_at,updated_user,is_deleted) VALUES ('11','商品名_11','',10,1,30000,'商品_コメント_11',NULL,NULL,NULL,NULL,0);
+INSERT INTO "public".t_products(product_no,product_title,image_src,inventory,category,price,"comment",created_at,created_user,updated_at,updated_user,is_deleted) VALUES ('12','商品名_12','',10,1,31000,'商品_コメント_12',NULL,NULL,NULL,NULL,0);
+INSERT INTO "public".t_products(product_no,product_title,image_src,inventory,category,price,"comment",created_at,created_user,updated_at,updated_user,is_deleted) VALUES ('13','商品名_13','',10,1,32000,'商品_コメント_13',NULL,NULL,NULL,NULL,0);
+INSERT INTO "public".t_products(product_no,product_title,image_src,inventory,category,price,"comment",created_at,created_user,updated_at,updated_user,is_deleted) VALUES ('14','商品名_14','',10,1,33000,'商品_コメント_14',NULL,NULL,NULL,NULL,0);
+INSERT INTO "public".t_products(product_no,product_title,image_src,inventory,category,price,"comment",created_at,created_user,updated_at,updated_user,is_deleted) VALUES ('15','商品名_15','',10,1,34000,'商品_コメント_15',NULL,NULL,NULL,NULL,0);
+INSERT INTO "public".t_products(product_no,product_title,image_src,inventory,category,price,"comment",created_at,created_user,updated_at,updated_user,is_deleted) VALUES ('16','商品名_16','',10,1,35000,'商品_コメント_16',NULL,NULL,NULL,NULL,0);
+INSERT INTO "public".t_products(product_no,product_title,image_src,inventory,category,price,"comment",created_at,created_user,updated_at,updated_user,is_deleted) VALUES ('17','商品名_17','',10,1,36000,'商品_コメント_17',NULL,NULL,NULL,NULL,0);
+INSERT INTO "public".t_products(product_no,product_title,image_src,inventory,category,price,"comment",created_at,created_user,updated_at,updated_user,is_deleted) VALUES ('18','商品名_18','',10,1,37000,'商品_コメント_18',NULL,NULL,NULL,NULL,0);
+INSERT INTO "public".t_products(product_no,product_title,image_src,inventory,category,price,"comment",created_at,created_user,updated_at,updated_user,is_deleted) VALUES ('19','商品名_19','',10,1,38000,'商品_コメント_19',NULL,NULL,NULL,NULL,0);
+INSERT INTO "public".t_products(product_no,product_title,image_src,inventory,category,price,"comment",created_at,created_user,updated_at,updated_user,is_deleted) VALUES ('20','商品名_20','',10,1,39000,'商品_コメント_20',NULL,NULL,NULL,NULL,0);
+--------------------------------------------------------------
+
+
+
