@@ -14,6 +14,7 @@
             align-items: center;
             justify-content: center;
             border: 5px solid #ffffff;
+            border-radius: 18px;
 
             &:hover {
                 cursor: pointer;
@@ -28,7 +29,7 @@
                 background-color:  aquamarine;
                 .yarn {
                     height: 80%;
-                    background: url('../../images/yarn.png');
+                    background: url('/assets/images/yarn.png');
                     background-repeat: no-repeat;
                     background-position: center;
                     background-color: #FFFFFF;
@@ -40,7 +41,7 @@
                 background-color: #CCB2A3;
                 .diy-kit {
                     height: 80%;
-                    background: url('../../images/diy-kit.png');
+                    background: url('/assets/images/diy-kit.png');
                     background-repeat: no-repeat;
                     background-position: center;
                     background-color: #EEEEEE;
@@ -52,7 +53,7 @@
                 background-color: #1037B5;
                 .samples {
                     height: 80%;
-                    background: url('../../images/samples.png');
+                    background: url('/assets/images/samples.png');
                     background-repeat: no-repeat;
                     background-position: center;
                     background-color: #EFC84A;
@@ -64,7 +65,7 @@
                 background-color: #1FA4B6;
                 .cast-on-needle {
                     height: 80%;
-                    background: url('../../images/cast-on-needle.png');
+                    background: url('/assets/images/cast-on-needle.png');
                     background-repeat: no-repeat;
                     background-position: center;
                     background-color: #FFFFFF;
@@ -76,7 +77,7 @@
                 background-color: #130F0F;
                 .crochet {
                     height: 80%;
-                    background: url('../../images/crochet.png');
+                    background: url('/assets/images/crochet.png');
                     background-repeat: no-repeat;
                     background-position: center;
                     background-color: #ECF0F0;
