@@ -12,8 +12,8 @@ export class AppContentsMainComponent {
   constructor(private http: HttpClient) { }
 
   clickBtnOne() {
-    this.http.post( '/api/feed', { data: 'testData!!' }, { headers } ).subscribe(
-        data => { console.log('get Data ===> %O', data); },
+    this.http.post( '/api/feed', { productId : '1' }, { headers } ).subscribe(
+        data => { console.log('get Data ===> %s', JSON.stringify(data)); },
         error => { console.log('error %O', error); }
     );
   }
