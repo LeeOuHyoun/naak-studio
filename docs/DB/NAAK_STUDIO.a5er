@@ -62,5 +62,5 @@ EffectMode=None
 Color=$000000
 BkColor=$FFFFFF
 ModifiedDateTime=20190307151854
-Position="Main",200,150,676,626
+Position="Main",200,150,676,600
 ZOrder=0
