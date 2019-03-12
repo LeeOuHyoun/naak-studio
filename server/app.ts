@@ -17,20 +17,20 @@ app.use('/api/feed', feedRouter);
 app.use(express.static(path.join(__dirname, '/public')));
 // catch 404 and forward to error handler
 app.use(
-  (req: express.Request, res: express.Response, next: express.NextFunction) => {
-    const err = new Error('Not Found');
-    next(err);
-  }
+    (req: express.Request, res: express.Response, next: express.NextFunction) => {
+        const err = new Error('Not Found');
+        next(err);
+    }
 );
 
 app.use(
-  (err: any, req: express.Request, res: express.Response, next: express.NextFunction) => {
-    res.status(err.status || 500);
-    res.json({
-      error: {},
-      message: err.message
-    });
-  }
+    (err: any, req: express.Request, res: express.Response, next: express.NextFunction) => {
+        res.status(err.status || 500);
+        res.json({
+            error: {},
+            message: err.message
+        });
+    }
 );
 
 export { app };
