@@ -7,10 +7,11 @@
     "start:server": "run-p watch:server boot:server",
     "watch:server": "tsc -w -p ./server/tsconfig.server.json",
     "boot:server": "nodemon ./dist/server/bin/www.js",
-    "build": "run-s build:server build:client",
+    "build": "run-s build:server build:client build:copy",
     "build:client": "ng build --output-path=./dist/server/public",
     "build:server": "tsc -p ./server/tsconfig.server.json",
-    "buildRun": "run-s build boot:server"
+    "buildRun": "run-s build boot:server",
+    "build:copy": "cpy ./server/**/*.sql ./dist/sql/"
   },
   "private": true,
   "dependencies": {
