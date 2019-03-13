@@ -6,12 +6,11 @@
     "start:client": "ng serve --aot=true --progress=false --proxy-config proxy.conf.json",
     "start:server": "run-p watch:server boot:server",
     "watch:server": "tsc -w -p ./server/tsconfig.server.json",
-    "boot:server": "nodemon ./dist/server/bin/www.js",
+    "boot:server": "nodemon ./dist/naak-studio/bin/www.js",
     "build": "run-s build:server build:client build:copy",
-    "build:client": "ng build --output-path=./dist/server/public",
+    "build:client": "ng build --output-path=./dist/naak-studio/public",
     "build:server": "tsc -p ./server/tsconfig.server.json",
-    "buildRun": "run-s build boot:server",
-    "build:copy": "cpy ./server/**/*.sql ./dist/sql/"
+    "build:copy": "cpy ./server/**/*.sql ./dist/naak-studio/dao/sql/products/"
   },
   "private": true,
   "dependencies": {

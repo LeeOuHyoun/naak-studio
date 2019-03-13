@@ -8,6 +8,10 @@ const productsInfoService: any = {
 
     getAllProducts: () => {
         return dao.products.all();
+    },
+
+    findByProductNo: (productNo) => {
+        return dao.products.findByProductNo(productNo);
     }
 };
 

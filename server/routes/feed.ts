@@ -12,8 +12,16 @@ feedRouter.post('/', (request: Request, response: Response) => {
     });
 });
 
-feedRouter.post('/products', (request: Request, response: Response) => {
+feedRouter.post('/products/dummy', (request: Request, response: Response) => {
     productsInfoService.getAllProducts().then(data => {
+        response.json({ data: data });
+    }).catch(error => {
+        console.log('error ==>', error);
+    });
+});
+
+feedRouter.post('/products', (request: Request, response: Response) => {
+    productsInfoService.findByProductNo('2').then(data => {
         response.json({ data: data });
     }).catch(error => {
         console.log('error ==>', error);

@@ -1,7 +1,7 @@
 import * as promise from 'bluebird';
 import * as pgPromise from 'pg-promise';
 import { IMain, IDatabase, IOptions } from 'pg-promise';
-import { IExtensions, ProductsRepository } from './queryFactory';
+import { IExtensions, ProductsRepository } from './repos';
 
 // pg-promise initialization options:
 const initOptions: IOptions<IExtensions> = {
