@@ -1,17 +1,17 @@
-import { dao } from '../dao/index';
+import { db } from '../db/index';
 
 const productsInfoService: any = {
     // :productNo
     helloTest: productNo => {
-        return dao.oneOrNone('SELECT * FROM t_products WHERE product_no = $1', [productNo]);
+        return db.oneOrNone('SELECT * FROM t_products WHERE product_no = $1', [productNo]);
     },
 
     getAllProducts: () => {
-        return dao.products.all();
+        return db.products.all();
     },
 
     findByProductNo: (productNo) => {
-        return dao.products.findByProductNo(productNo);
+        return db.products.findByProductNo(productNo);
     }
 };
 

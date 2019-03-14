@@ -1,7 +1,7 @@
 import * as promise from 'bluebird';
 import * as pgPromise from 'pg-promise';
 import { IMain, IDatabase, IOptions } from 'pg-promise';
-import { IExtensions, ProductsRepository } from './repos';
+import { IExtensions, ProductsRepository } from './repository';
 
 // pg-promise initialization options:
 const initOptions: IOptions<IExtensions> = {
@@ -15,13 +15,13 @@ const initOptions: IOptions<IExtensions> = {
 // Database connection parameters:
 const config = {
     host: 'localhost',
-    port: 5432,
-    database: 'postgres',
-    user: 'postgres',
-    password: 'postgresql'
+    port: 5440,
+    database: 'medalstation',
+    user: 'rdb_admin',
+    password: 'PassW0rd'
 };
 
 const pgp: IMain = pgPromise(initOptions);
-const dao = <IDatabase<IExtensions> & IExtensions>pgp(config);
+const db = <IDatabase<IExtensions> & IExtensions>pgp(config);
 
-export { dao };
+export { db };

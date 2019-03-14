@@ -6,29 +6,29 @@ import * as path from 'path';
 const app: express.Application = express();
 
 app.disable('x-powered-by');
-app.use(json());
 app.use(compression());
+app.use(json());
 app.use(urlencoded({ extended: true }));
+app.use(express.static(path.join(__dirname, '/public')));
 
 // api routes FIXME TODO
 import { feedRouter } from './routes/feed';
 app.use('/api/feed', feedRouter);
 
-app.use(express.static(path.join(__dirname, '/public')));
 // catch 404 and forward to error handler
 app.use(
-    (req: express.Request, res: express.Response, next: express.NextFunction) => {
-        const err = new Error('Not Found');
-        next(err);
+    (request: express.Request, response: express.Response, next: express.NextFunction) => {
+        const error = new Error('Not Found');
+        next(error);
     }
 );
-
+// catch other errors handler
 app.use(
-    (err: any, req: express.Request, res: express.Response, next: express.NextFunction) => {
-        res.status(err.status || 500);
-        res.json({
+    (error: any, request: express.Request, response: express.Response, next: express.NextFunction) => {
+        response.status(error.status || 500);
+        response.json({
             error: {},
-            message: err.message
+            message: error.message
         });
     }
 );
