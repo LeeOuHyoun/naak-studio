@@ -26,63 +26,28 @@
                 height: 100%;
             }
             &.yarn-wrap {
-                background-color:  aquamarine;
-                .yarn {
-                    height: 80%;
-                    background: url('/assets/images/yarn.png');
-                    background-repeat: no-repeat;
-                    background-position: center;
-                    background-color: #FFFFFF;
-                    border-radius: 50%;
-                }
+                background: url('/assets/images/yarn-1.png') no-repeat center;
+                background-size:cover;
             }
 
             &.diy-kit-wrap {
-                background-color: #CCB2A3;
-                .diy-kit {
-                    height: 80%;
-                    background: url('/assets/images/diy-kit.png');
-                    background-repeat: no-repeat;
-                    background-position: center;
-                    background-color: #EEEEEE;
-                    border-radius: 50%;
-                }
+                background: url('/assets/images/yarn-2.png') no-repeat center;
+                background-size:cover;
             }
 
             &.samples-wrap {
-                background-color: #1037B5;
-                .samples {
-                    height: 80%;
-                    background: url('/assets/images/samples.png');
-                    background-repeat: no-repeat;
-                    background-position: center;
-                    background-color: #EFC84A;
-                    border-radius: 50%;
-                }
+                background: url('/assets/images/yarn-3.png') no-repeat center;
+                background-size:cover;
             }
 
             &.cast-on-needle-wrap {
-                background-color: #1FA4B6;
-                .cast-on-needle {
-                    height: 80%;
-                    background: url('/assets/images/cast-on-needle.png');
-                    background-repeat: no-repeat;
-                    background-position: center;
-                    background-color: #FFFFFF;
-                    border-radius: 50%;
-                }
+                background: url('/assets/images/yarn-4.png') no-repeat center;
+                background-size:cover;
             }
 
             &.crochet-wrap {
-                background-color: #130F0F;
-                .crochet {
-                    height: 80%;
-                    background: url('/assets/images/crochet.png');
-                    background-repeat: no-repeat;
-                    background-position: center;
-                    background-color: #ECF0F0;
-                    border-radius: 50%;
-                }
+                background: url('/assets/images/yarn-5.png') no-repeat center;
+                background-size:cover;
             }
 
         }
