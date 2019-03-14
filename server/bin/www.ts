@@ -32,19 +32,19 @@ server.on('listening', onListening);
  */
 
 function normalizePort(val): boolean | number {
-  const normalizedPort = parseInt(val, 10);
+    const normalizedPort = parseInt(val, 10);
 
-  if (isNaN(normalizedPort)) {
-    // named pipe
-    return val;
-  }
+    if (isNaN(normalizedPort)) {
+        // named pipe
+        return val;
+    }
 
-  if (normalizedPort >= 0) {
-    // port number
-    return normalizedPort;
-  }
+    if (normalizedPort >= 0) {
+        // port number
+        return normalizedPort;
+    }
 
-  return false;
+    return false;
 }
 
 /**
@@ -52,27 +52,27 @@ function normalizePort(val): boolean | number {
  */
 
 function onError(error) {
-  if (error.syscall !== 'listen') {
-    throw error;
-  }
+    if (error.syscall !== 'listen') {
+        throw error;
+    }
 
-  const bind = typeof port === 'string' ? 'Pipe ' + port : 'Port ' + port;
+    const bind = typeof port === 'string' ? 'Pipe ' + port : 'Port ' + port;
 
-  // handle specific listen errors with friendly messages
-  switch (error.code) {
-    case 'EACCES':
-      // tslint:disable-next-line
-      console.error(bind + ' requires elevated privileges');
-      process.exit(1);
-      break;
-    case 'EADDRINUSE':
-      // tslint:disable-next-line
-      console.error(bind + ' is already in use');
-      process.exit(1);
-      break;
-    default:
-      throw error;
-  }
+    // handle specific listen errors with friendly messages
+    switch (error.code) {
+        case 'EACCES':
+            // tslint:disable-next-line
+            console.error(bind + ' requires elevated privileges');
+            process.exit(1);
+            break;
+        case 'EADDRINUSE':
+            // tslint:disable-next-line
+            console.error(bind + ' is already in use');
+            process.exit(1);
+            break;
+        default:
+            throw error;
+    }
 }
 
 /**
@@ -80,6 +80,6 @@ function onError(error) {
  */
 
 function onListening() {
-  const addr = server.address();
-  const bind = typeof addr === 'string' ? 'pipe ' + addr : 'port ' + addr.port;
+    const addr = server.address();
+    const bind = typeof addr === 'string' ? 'pipe ' + addr : 'port ' + addr.port;
 }
