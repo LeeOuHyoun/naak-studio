@@ -2,6 +2,18 @@ footer {
     color: #FFFFFF;
     background-color: #1A252F;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    div {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+        &.copyright {
+            align-items: flex-end;
+        }
+        &.address {
+            align-items: flex-start;
+        }
+    }
 }
