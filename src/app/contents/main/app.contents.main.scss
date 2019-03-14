@@ -15,15 +15,21 @@
             justify-content: center;
             border: 5px solid #ffffff;
             border-radius: 18px;
+            margin: 0;
+            padding: 0;
+            color: #ffffff;
+            text-shadow: 3px 3px 1px #999999;
+            font-weight: bold;
+            font-size: 2rem;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
 
             &:hover {
                 cursor: pointer;
             }
             &:active {
                 opacity: 0.5;
-            }
-            div {
-                height: 100%;
             }
             &.yarn-wrap {
                 background: url("/assets/images/yarn-1.png") no-repeat center;
