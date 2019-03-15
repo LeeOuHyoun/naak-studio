@@ -2,6 +2,7 @@
 ※スクロールページング
 ●npm i ngx-infinite-scroll
 ・https://www.npmjs.com/package/ngx-infinite-scroll
+
 ---------------------------------------------------------------------------
 ●Knitting Help Videos
 t_help_videos
@@ -21,10 +22,15 @@ t_help_videos
 ---------------------------------------------------------------------------
 ●router＆遷移
 ・<a routerLink="/yarn" routerLinkActive="active">test</a>
+●参考
+・https://infoscis.github.io/2017/07/21/angular-tutorial-routing/
 ---------------------------------------------------------------------------
 ●loading参考
 ・https://nezhar.com/blog/create-a-loading-screen-for-angular-apps/
+●https://www.npmjs.com/package/ngx-loading
+※npm i ngx-loading
+・https://stackblitz.com/github/Zak-C/ngx-loading
 ---------------------------------------------------------------------------
-
-
+※その他参考
+・https://stackblitz.com/
 ---------------------------------------------------------------------------
