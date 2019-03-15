@@ -11,10 +11,6 @@ export class AppContentsMainComponent {
 
     constructor(private http: HttpClient) { }
 
-    clickBtnOne() {
-        $(location).attr('href', '/yarn');
-    }
-
     clickBtnGetAll() {
         this.http.post('/api/feed/products', {}, { headers }).subscribe(
             data => { console.log('get Data ===> %s', JSON.stringify(data)); },
