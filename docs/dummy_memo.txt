@@ -1,0 +1,30 @@
+﻿---------------------------------------------------------------------------
+※スクロールページング
+●npm i ngx-infinite-scroll
+・https://www.npmjs.com/package/ngx-infinite-scroll
+---------------------------------------------------------------------------
+●Knitting Help Videos
+t_help_videos
+○
+・no
+・url
+・type
+・comment
+・created_at
+・created_user
+・updated_at
+・updated_user
+・is_deleted
+---------------------------------------------------------------------------
+●AWS
+・https://opentutorials.org/course/608/3056
+---------------------------------------------------------------------------
+●router＆遷移
+・<a routerLink="/yarn" routerLinkActive="active">test</a>
+---------------------------------------------------------------------------
+●loading参考
+・https://nezhar.com/blog/create-a-loading-screen-for-angular-apps/
+---------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------

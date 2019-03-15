@@ -11,9 +11,11 @@ footer {
         padding: 5px;
         &.copyright {
             align-items: flex-end;
+            padding-bottom : 0;
         }
         &.address {
             align-items: flex-start;
+            padding-top : 0;
         }
     }
 }
