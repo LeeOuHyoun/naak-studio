@@ -28,9 +28,11 @@
             &:hover {
                 cursor: pointer;
             }
+
             &:active {
                 opacity: 0.5;
             }
+
             &.yarn-wrap {
                 background: url("/assets/images/yarn-1.png") no-repeat center;
                 background-size: cover;

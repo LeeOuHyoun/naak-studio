@@ -18,7 +18,7 @@ export class AppContentsYarnComponent {
     public helloYarn = 'Hello Yarn~!!!!';
 
     init() {
-        this.http.post<{data: any[]}>('/api/feed/products', {}).subscribe(
+        this.http.post<{ data: any[] }>('/api/feed/products', {}).subscribe(
             data => {
                 this.yearProducts = data.data;
             },
