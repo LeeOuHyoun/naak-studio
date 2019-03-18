@@ -1,3 +1,38 @@
 .product-yarn-wrap {
     height: 100%;
+    .control-wrap {
+        background-color: gray;
+        height: 10%;
+    }
+    .list-wrap {
+        width: 100%;
+        height: 90%;
+        overflow-y: auto;
+        padding: 5px;
+
+        ul {
+            margin: 0;
+            padding: 0;
+            li {
+                position: relative;
+                float: left;
+                list-style: none;
+                width: 20%;
+                height: 300px;
+                padding: 5px;
+                div {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 5%;
+                    background-color: orange;
+                }
+                @media (max-width: 1200px) {
+                    width: 50%;
+                }
+                @media (max-width: 500px) {
+                    width: 100%;
+                }
+            }
+        }
+    }
 }

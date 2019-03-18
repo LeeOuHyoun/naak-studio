@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
-const headers = new HttpHeaders().set('Content-Type', 'application/json');
+// const headers = new HttpHeaders().set('Content-Type', 'application/json');
 
 @Component({
     templateUrl: './app.contents.yarn.html',
@@ -18,8 +18,7 @@ export class AppContentsYarnComponent {
     public helloYarn = 'Hello Yarn~!!!!';
 
     init() {
-        // console.log('%cHello yarn!!', 'font-size: 20px; color: #FFAA00; font-weight: bold;');
-        this.http.post<{data}>('/api/feed/products', {}, { headers }).subscribe(
+        this.http.post<{data: any[]}>('/api/feed/products', {}).subscribe(
             data => {
                 this.yearProducts = data.data;
             },

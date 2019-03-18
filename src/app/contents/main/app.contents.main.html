@@ -5,37 +5,10 @@
             routerLink="/yarn" routerLinkActive="active"> 실 <br/> Yarn
         </div>
         <div class="menu col-md-4 col-sm-12 diy-kit-wrap" (click)="clickBtnGetAll()"> DIY키트 <br/> Kit </div>
-        <div class="menu col-md-4 col-sm-12 samples-wrap">
-            샘플 <br/> Samples
-            <ngx-loading [show]="loading"
-                [config]="{
-                    animationType: ngxLoadingAnimationTypes.chasingDots,
-                    primaryColour: primaryColour,
-                    secondaryColour: secondaryColour,
-                    tertiaryColour: primaryColour,
-                    backdropBorderRadius: '3px'}"
-                [template]="loadingTemplate"></ngx-loading>
-        </div>
+        <div class="menu col-md-4 col-sm-12 samples-wrap"> 샘플 <br/> Samples </div>
 
         <!-- menu bottom Knitting Help Videos -->
         <div class="menu col-md-4 col-sm-12 cast-on-needle-wrap"> 대바늘 기초 <br/> Cast on </div>
-        <div class="menu col-md-4 col-sm-12 crochet-wrap">
-            코바늘 기초 <br/> Crochet
-            <ngx-loading [show]="loading" [config]="{ animationType: ngxLoadingAnimationTypes.rectangleBounce,
-                backdropBackgroundColour: 'rgba(255,255,255,0.3)', backdropBorderRadius: '10px',
-                primaryColour: '#ffffff', secondaryColour: '#ffffff', tertiaryColour: '#ffffff' }"
-                [template]="customLoadingTemplate">
-            </ngx-loading>
-        </div>
-        <div class="menu col-md-4 col-sm-12"> test
-            <ngx-loading [show]="loading"
-                [config]="{
-                    animationType: ngxLoadingAnimationTypes.threeBounce,
-                    primaryColour: primaryColour,
-                    secondaryColour: secondaryColour,
-                    tertiaryColour: primaryColour,
-                    backdropBorderRadius: '3px'}"
-                [template]="loadingTemplate"></ngx-loading>
-        </div>
+        <div class="menu col-md-4 col-sm-12 crochet-wrap"> 코바늘 기초 <br/> Crochet </div>
     </div>
 </div>

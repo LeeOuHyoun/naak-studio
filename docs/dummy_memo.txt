@@ -17,6 +17,10 @@ t_help_videos
 ・updated_user
 ・is_deleted
 ---------------------------------------------------------------------------
+●bootstrap layout flex
+・https://getbootstrap.jp/docs/4.2/getting-started/introduction/
+・https://getbootstrap.com/docs/4.3/utilities/flex/
+---------------------------------------------------------------------------
 ●AWS
 ・https://opentutorials.org/course/608/3056
 ---------------------------------------------------------------------------
@@ -33,4 +37,8 @@ t_help_videos
 ---------------------------------------------------------------------------
 ※その他参考
 ・https://stackblitz.com/
+●loading injet
+・https://nezhar.com/blog/create-a-loading-screen-for-angular-apps/
+
 ---------------------------------------------------------------------------
+
