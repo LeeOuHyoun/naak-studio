@@ -1,11 +1,16 @@
 <div class="product-yarn-wrap">
-    <div class="control-wrap">
-
+    <div class="control-wrap d-flex flex-row-reverse bd-highlight">
+        <div class="d-flex m-1 bd-highlight">
+            <input type="search" placeholder="Search" class="p-1" />
+        </div>
     </div>
     <div class="list-wrap">
         <ul>
-            <li>
-                <div></div>
+            <li *ngFor="let yarn of yarnProducts">
+                <div class="product-wrap" (click)="testOnClick()">
+                    <div class="title"> {{ yarn.product_title }} </div>
+                    <img src="/assets/images/naak-logo.png" />
+                </div>
             </li>
         </ul>
     </div>

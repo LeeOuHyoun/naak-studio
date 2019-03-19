@@ -1,8 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
-@import '../node_modules/bootstrap/dist/css/bootstrap-grid.min';
+@import '../node_modules/bootstrap/dist/css/bootstrap.min';
 
 // common
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
 
@@ -15,22 +16,32 @@ html, body {
         app-header {
             height: 8%;
         }
+
         div.wrapper-contents {
             height: 82%;
         }
+
         app-footer {
             height: 10%;
+
             footer {
                 height: 100%;
             }
         }
-    }
 
+        input[type="search"]::-webkit-search-decoration,
+        input[type="search"]::-webkit-search-cancel-button,
+        input[type="search"]::-webkit-search-results-button,
+        input[type="search"]::-webkit-search-results-decoration {
+            -webkit-appearance: none;
+        }
+    }
 
     @media (max-width: 767px) {
         app-root {
             div.wrapper-contents {
                 height: 1600px;
+
                 .menu-wrap {
                     padding: 5px 5px !important;
                 }

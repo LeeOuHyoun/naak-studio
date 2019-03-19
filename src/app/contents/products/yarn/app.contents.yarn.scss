@@ -3,31 +3,48 @@
 
     .control-wrap {
         background-color: gray;
-        height: 10%;
+        height: 40px;
+
+        input[type="search"] {
+            width: 300px;
+            font-size: 1.1rem;
+        }
     }
 
     .list-wrap {
         width: 100%;
-        height: 90%;
+        height: calc(100% - 40px);
         overflow-y: auto;
         padding: 5px;
 
         ul {
             margin: 0;
             padding: 0;
+
             li {
                 position: relative;
                 display: inline-block;
                 list-style: none;
                 width: 20%;
-                height: 250px;
+                height: 270px;
                 padding: 5px;
 
-                div {
+                div.product-wrap {
                     width: 100%;
                     height: 100%;
-                    border-radius: 5%;
-                    background-color: orange;
+
+                    .title {
+                        position: absolute;
+                        left: 10px;
+                        top: 10px;
+                        font-weight: bold;
+                        font-size: 1.2rem;
+                    }
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
                 }
 
                 @media (max-width: 1200px) {

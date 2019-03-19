@@ -12,7 +12,12 @@ const productsInfoService: any = {
 
     findByProductNo: (productNo) => {
         return db.products.findByProductNo(productNo);
+    },
+
+    findAllByCategory: (category) => {
+        return db.manyOrNone('SELECT * FROM t_products WHERE category = $1', [category]);
     }
+
 };
 
 export { productsInfoService };

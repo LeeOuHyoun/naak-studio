@@ -15,6 +15,9 @@ app.use(express.static(path.join(__dirname, '/public')));
 import { feedRouter } from './routes/feed';
 app.use('/api/feed', feedRouter);
 
+import { productsRouter } from './routes/products';
+app.use('/api/products', productsRouter);
+
 // catch 404 and forward to error handler
 app.use(
     (request: express.Request, response: express.Response, next: express.NextFunction) => {
