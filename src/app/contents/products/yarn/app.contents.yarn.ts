@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Data } from '@angular/router';
 
+declare const bootbox: any;
+
 // const headers = new HttpHeaders().set('Content-Type', 'application/json');
 @Component({
     templateUrl: './app.contents.yarn.html',
@@ -27,6 +29,11 @@ export class AppContentsYarnComponent {
     }
 
     testOnClick() {
-        bootbox.alert('helloWorld');
+        bootbox.confirm('Are you sure?', (result: boolean) => {
+            console.log(result);
+            if (result) {
+                this.yarnProducts = [];
+            }
+        });
     }
 }

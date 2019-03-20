@@ -13,6 +13,10 @@ import { AppContentsYarnComponent } from './contents/products/yarn/app.contents.
 import { AppContentsDiykitComponent } from './contents/products/diykit/app.contents.diykit';
 import { AuthInterceptor } from './providers/authInterceptor';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+
 @NgModule({
     declarations: [
         AppComponent,
@@ -31,7 +35,10 @@ import { AuthInterceptor } from './providers/authInterceptor';
             { path: '', component: AppContentsMainComponent },
             { path: 'yarn', component: AppContentsYarnComponent },
             { path: 'diykit', component: AppContentsDiykitComponent }
-        ])
+        ]),
+        MatInputModule,
+        MatButtonModule,
+        BrowserAnimationsModule
     ],
     providers: [{
         provide: HTTP_INTERCEPTORS,
