@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Data, ActivatedRoute, ParamMap } from '@angular/router';
 
@@ -6,19 +6,17 @@ import { Data, ActivatedRoute, ParamMap } from '@angular/router';
     templateUrl: './app.contents.products.html',
     styleUrls: ['./app.contents.products.scss']
 })
+export class AppContentsProductsComponent implements OnInit {
 
-export class AppContentsProductsComponent {
-
-    public productsByCategory: any[] = [];
+    // カテゴリ別、商品一覧
+    productsByCategory: any[] = [];
 
     constructor(
         private http: HttpClient,
-        private route: ActivatedRoute) {
-        this.init();
-    }
+        private route: ActivatedRoute) { }
 
-    init() {
-        const productCategory = this.route.snapshot.queryParamMap.get('category');
+    ngOnInit(): void {
+        const productCategory: string = this.route.snapshot.queryParamMap.get('category');
         this.http.post<Data>('/api/products/findByCategory', { 'category': productCategory }).subscribe(
             data => {
                 this.productsByCategory = data.data;
