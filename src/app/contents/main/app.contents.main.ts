@@ -17,7 +17,8 @@ export class AppContentsMainComponent {
         private router: Router
     ) { }
 
-    clickBtnGetAll() {
-        this.router.navigate(['/diykit'], { queryParams: { page: 1 } });
+    // FIXME router/get参考
+    gotoProductByCategory(category: string) {
+        this.router.navigate(['/products'], { queryParams: { category: category } });
     }
 }
