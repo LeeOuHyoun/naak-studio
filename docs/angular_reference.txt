@@ -1,0 +1,19 @@
+-----------------------------------------------------------------------------------------------------------------------------
+※value binding &「ngModelChange」
+●app.module.ts
+import { FormsModule } from '@angular/forms';
+
+●.html
+    <div>
+        <div>
+            <span>{{ testValue }}</span> / 
+            <input type="text" [(ngModel)]="testValue" (ngModelChange)="testOnChange()" />
+        </div>
+    </div>
+
+●.ts (component)
+    // FIXME 「ngModelChange」参考用
+    testOnChange(): void {
+        console.log('%cchanged value => %s ', 'font-size: 20px; color: orange', this.testValue);
+    }
+-----------------------------------------------------------------------------------------------------------------------------

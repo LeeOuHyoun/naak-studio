@@ -1,27 +1,29 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
-// XXX FIXME
-import { NgxLoadingModule } from 'ngx-loading';
-
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { AppHeaderComponent } from './header/app.header';
-import { AppFooterComponent } from './footer/app.footer';
-import { AppContentsMainComponent } from './contents/main/app.contents.main';
-import { AppContentsProductsComponent } from './contents/products/app.contents.products';
-
-import { AuthInterceptor } from './providers/authInterceptor';
+// XXX TODO
+import { StoreModule } from '@ngrx/store';
+import { EffectsModule } from '@ngrx/effects';
 
 // angular material
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
-
-// XXX FIXME
+import { MatIconModule } from '@angular/material/icon';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+
+import { AuthInterceptor } from './providers/authInterceptor';
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+
+// naak-studio modules
+import { AppHeaderComponent } from './header/app.header';
+import { AppFooterComponent } from './footer/app.footer';
+import { AppContentsMainComponent } from './contents/main/app.contents.main';
+import { AppContentsProductsComponent } from './contents/products/app.contents.products';
 
 @NgModule({
     declarations: [
@@ -35,7 +37,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
         BrowserModule,
         HttpClientModule,
         AppRoutingModule,
-        NgxLoadingModule.forRoot({}),
+        FormsModule,
         RouterModule.forRoot([
             { path: '', component: AppContentsMainComponent },
             { path: 'products', component: AppContentsProductsComponent }
@@ -43,6 +45,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
         BrowserAnimationsModule,
         MatInputModule,
         MatButtonModule,
+        MatIconModule,
         MatProgressSpinnerModule
     ],
     providers: [{

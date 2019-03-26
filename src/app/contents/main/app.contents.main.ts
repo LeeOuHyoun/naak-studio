@@ -7,8 +7,6 @@ import { Router } from '@angular/router';
 })
 export class AppContentsMainComponent {
 
-    testValue = 'testFruit_1';
-
     constructor(private router: Router) { }
 
     // 商品一覧画面遷移
