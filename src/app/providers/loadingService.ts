@@ -3,18 +3,18 @@ import { Injectable } from '@angular/core';
 @Injectable({ providedIn: 'root' })
 export class LoadingServices {
 
-    private _loading = false;
+    private isLoading = false;
 
     get loading() {
-        return this._loading;
+        return this.isLoading;
     }
     set loading(value) {
-        this._loading = value;
+        this.isLoading = value;
     }
     startLoading() {
-        this.loading = true;
+        this.isLoading = true;
     }
     stopLoading() {
-        this.loading = false;
+        this.isLoading = false;
     }
 }
