@@ -1,13 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-    templateUrl: './app.contents.main.html',
-    styleUrls: ['./app.contents.main.scss']
+    selector: 'app-main',
+    templateUrl: './main.component.html',
+    styleUrls: ['./main.component.scss']
 })
-export class AppContentsMainComponent {
+export class MainComponent implements OnInit {
 
     constructor(private router: Router) { }
+
+    ngOnInit() { }
 
     // 商品一覧画面遷移
     gotoProductByCategory(category: string) {

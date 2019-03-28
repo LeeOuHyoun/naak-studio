@@ -19,19 +19,21 @@ import { AuthInterceptor } from './providers/authInterceptor';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+// XXX TODO service api 勉強中
+import { ApiService } from './core/api.service';
 // naak-studio modules
-import { AppHeaderComponent } from './header/app.header';
-import { AppFooterComponent } from './footer/app.footer';
-import { AppContentsMainComponent } from './contents/main/app.contents.main';
-import { AppContentsProductsComponent } from './contents/products/app.contents.products';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { MainComponent } from './contents/main/main.component';
+import { ProductsComponent } from './contents/products/products.component';
 
 @NgModule({
     declarations: [
         AppComponent,
-        AppHeaderComponent,
-        AppFooterComponent,
-        AppContentsMainComponent,
-        AppContentsProductsComponent
+        HeaderComponent,
+        FooterComponent,
+        MainComponent,
+        ProductsComponent,
     ],
     imports: [
         BrowserModule,
@@ -39,8 +41,8 @@ import { AppContentsProductsComponent } from './contents/products/app.contents.p
         AppRoutingModule,
         FormsModule,
         RouterModule.forRoot([
-            { path: '', component: AppContentsMainComponent },
-            { path: 'products', component: AppContentsProductsComponent }
+            { path: '', component: MainComponent },
+            { path: 'products', component: ProductsComponent }
         ]),
         BrowserAnimationsModule,
         MatInputModule,
@@ -52,7 +54,8 @@ import { AppContentsProductsComponent } from './contents/products/app.contents.p
         provide: HTTP_INTERCEPTORS,
         useClass: AuthInterceptor,
         multi: true
-    }],
+    },
+        ApiService],
     bootstrap: [AppComponent]
 })
 export class AppModule { }
