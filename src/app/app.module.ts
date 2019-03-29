@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { HttpModule, XSRFStrategy, CookieXSRFStrategy } from '@angular/http';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 
@@ -54,6 +55,9 @@ import { ProductsComponent } from './contents/products/products.component';
         provide: HTTP_INTERCEPTORS,
         useClass: AuthInterceptor,
         multi: true
+    }, {
+        provide: XSRFStrategy,
+        useValue: new CookieXSRFStrategy('csrftoken', 'X-CSRFToken')
     },
         ApiService],
     bootstrap: [AppComponent]

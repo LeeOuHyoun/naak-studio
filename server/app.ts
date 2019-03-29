@@ -2,10 +2,12 @@ import { json, urlencoded } from 'body-parser';
 import * as compression from 'compression';
 import * as express from 'express';
 import * as path from 'path';
+import * as helmet from 'helmet';
 
 const app: express.Application = express();
-
 app.disable('x-powered-by');
+app.use(helmet());
+app.use(helmet.hidePoweredBy());
 app.use(compression());
 app.use(json());
 app.use(urlencoded({ extended: true }));
@@ -14,7 +16,6 @@ app.use(express.static(path.join(__dirname, '/public')));
 // api routes FIXME TODO
 import { feedRouter } from './routes/feed';
 app.use('/api/feed', feedRouter);
-
 import { productsRouter } from './routes/products';
 app.use('/api/products', productsRouter);
 
